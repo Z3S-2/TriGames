@@ -1,0 +1,10 @@
+{
+  "name": "TriGames",
+  "short_name": "TriGames",
+  "description": "Trois mini-jeux, un maximum de fun.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6200ee",
+  "orientation": "portrait"
+}

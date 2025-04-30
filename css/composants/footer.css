@@ -1,0 +1,19 @@
+/* Footer - Collé en bas de page */
+footer {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Version responsive mobile */
+@media (max-width: 768px) {
+  footer {
+    font-size: 1rem;
+  }
+}

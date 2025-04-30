@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description"
+        content="L’haltérophilie est un sport impressionnant qui allie force, technique et explosivité. Pourtant, il est souvent mal compris et perçu comme réservé aux athlètes ultra-puissants. En réalité, il s’agit d’une discipline accessible à tous, qui apporte de nombreux bienfaits physiques et mentaux." />
+    <title>TriGames</title>
+    <link rel="shortcut icon" href="images/logonopaonnogain.png" />
+    <link rel="stylesheet" href="css/page/accueil.css" type="text/css">
+    <link rel="stylesheet" href="css/composants/header.css" type="text/css">
+    <link rel="stylesheet" href="css/composants/footer.css" type="text/css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">TriGames</div>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Jeux</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenue sur <span>TriGames</span></h1>
+            <p>Trois mini-jeux, un maximum de fun.</p>
+            <div class="buttons">
+                <a href="#" class="btn">Mini-Jeu Arcade</a>
+                <a href="#" class="btn">Mini-Jeu Réflexe</a>
+                <a href="#" class="btn">Mini-Jeu Stratégie</a>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1792/1792491.png" alt="Arcade" />
+                <h2>Arcade</h2>
+                <p>Attrape le plus de points en 60 secondes !</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2942/2942840.png" alt="Réflexe" />
+                <h2>Réflexe</h2>
+                <p>Clique plus vite que la lumière.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4149/4149654.png" alt="Stratégie" />
+                <h2>Stratégie</h2>
+                <p>Fais les bons choix en un temps limite.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mentions légales | Politique de confidentialité | Contact</p>
+    </footer>
+
+    <!-- AJOUT IMPORTANT pour la PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('Service Worker enregistré avec succès :', registration);
+                })
+                .catch(function (error) {
+                    console.log('Erreur d\'enregistrement du Service Worker :', error);
+                });
+        }
+    </script>
+
+</body>
+
+</html>
