@@ -30,17 +30,17 @@
             <h1>Bienvenue sur <span>TriGames</span></h1>
             <p>Trois mini-jeux, un maximum de fun.</p>
             <div class="buttons">
-                <a href="#" class="btn">Mini-Jeu Arcade</a>
+                <a href="dashup.html" class="btn">DashUp</a>
                 <a href="TimeRace.html" class="btn">TimeRace</a>
                 <a href="#" class="btn">Mini-Jeu Stratégie</a>
             </div>
         </section>
 
         <section class="cards">
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1792/1792491.png" alt="Arcade" />
-                <h2>Arcade</h2>
-                <p>Attrape le plus de points en 60 secondes !</p>
+            <div class="card" href="dashup.html">
+                <img src="images/ghost.png" alt="DashUp" />
+                <h2>DashUp</h2>
+                <p>Va le plus haut possible et atteins le meilleur score !</p>
             </div>
             <div class="card">
                 <img src="https://cdn-icons-png.flaticon.com/512/2942/2942840.png" alt="Réflexe" />
@@ -58,20 +58,6 @@
     <footer>
         <p>Mentions légales | Politique de confidentialité | Contact</p>
     </footer>
-
-    <!-- AJOUT IMPORTANT pour la PWA -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(function (registration) {
-                    console.log('Service Worker enregistré avec succès :', registration);
-                })
-                .catch(function (error) {
-                    console.log('Erreur d\'enregistrement du Service Worker :', error);
-                });
-        }
-    </script>
-
 </body>
 
 </html>

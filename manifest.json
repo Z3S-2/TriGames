@@ -1,10 +1,20 @@
 {
-  "name": "TriGames",
-  "short_name": "TriGames",
-  "description": "Trois mini-jeux, un maximum de fun.",
-  "start_url": "/index.html",
+  "name": "DashUp",
+  "short_name": "DashUp",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#6200ee",
-  "orientation": "portrait"
+  "background_color": "#f0f0f0",
+  "description": "Un jeu runner vertical minimaliste.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

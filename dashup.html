@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DashUp</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="intro-screen">
+      <h1>DashUp</h1>
+      <p class="description">Sautez, grimpez et évitez les obstacles !</p>
+      <button id="start-button">Jouer</button>
+    </div>
+    <div id="game" style="display: none;">
+      <div id="player"></div>
+      <div id="score">0</div>
+      <div id="game-over" style="display: none;">Game Over</div>
+      <button id="retry-button" style="display: none;">Rejouer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+
+</html>
